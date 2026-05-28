@@ -120,4 +120,7 @@ int main() {
             case 3:
                 tampilkan();
                 break;
+            case 4:
+                clear();
+                break;
             
