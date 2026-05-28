@@ -12,3 +12,13 @@ struct Queue {
     string data[MAX];
 };
 
+Queue q;
+
+bool isFull() {
+    // Antrean penuh jika posisi tail tepat di belakang head secara melingkar
+    if ((q.tail + 1) % MAX == q.head) {
+        return true;
+    }
+    return false;
+}
+
