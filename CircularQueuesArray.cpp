@@ -66,3 +66,10 @@ void dequeue() {
     }
 }
 
+void clear() {
+    // Reset status head dan tail untuk mengosongkan antrean
+    q.head = -1;
+    q.tail = -1;
+    cout << "Antrean berhasil dikosongkan." << endl;
+}
+
