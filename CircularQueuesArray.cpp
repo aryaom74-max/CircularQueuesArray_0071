@@ -97,4 +97,15 @@ int main() {
     int pilih;
     string dt;
     
-   
+    while (true) {
+        system("cls"); // Gunakan "clear" jika Anda menggunakan Linux/macOS
+        cout << "=== MENU QUEUE ===" << endl;
+        cout << "1. Tambah Data (Enqueue)" << endl;
+        cout << "2. Hapus Data (Dequeue)" << endl;
+        cout << "3. Tampilkan Antrean" << endl;
+        cout << "4. Kosongkan Antrean (Clear)" << endl;
+        cout << "5. Keluar" << endl;
+        cout << "Pilihan Anda: ";
+        cin >> pilih;
+        
+        
