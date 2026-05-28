@@ -108,4 +108,10 @@ int main() {
         cout << "Pilihan Anda: ";
         cin >> pilih;
         
-        
+        switch (pilih) {
+            case 1:
+                cout << "Masukkan data: ";
+                cin >> dt;
+                enqueue(dt);
+                break;
+            
