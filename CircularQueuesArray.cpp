@@ -114,4 +114,7 @@ int main() {
                 cin >> dt;
                 enqueue(dt);
                 break;
+            case 2:
+                dequeue();
+                break;
             
