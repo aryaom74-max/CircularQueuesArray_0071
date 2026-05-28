@@ -123,4 +123,7 @@ int main() {
             case 4:
                 clear();
                 break;
+            case 5:
+                cout << "Terima kasih!" << endl;
+                return 0;
             
