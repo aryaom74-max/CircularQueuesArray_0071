@@ -48,3 +48,21 @@ void enqueue(string input) {
     cout << "\"" << input << "\" berhasil ditambahkan ke antrean." << endl;
 }
 
+void dequeue() {
+    if (isEmpty()) {
+        cout << "Antrean kosong!" << endl;
+        return;
+    }
+    
+    cout << "\"" << q.data[q.head] << "\" berhasil dihapus dari antrean." << endl;
+    
+    // Jika hanya ada satu elemen tersisa, reset antrean ke kondisi kosong
+    if (q.head == q.tail) {
+        q.head = -1;
+        q.tail = -1;
+    } else {
+        // Geser head secara melingkar
+        q.head = (q.head + 1) % MAX;
+    }
+}
+
