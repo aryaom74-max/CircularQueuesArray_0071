@@ -117,4 +117,7 @@ int main() {
             case 2:
                 dequeue();
                 break;
+            case 3:
+                tampilkan();
+                break;
             
