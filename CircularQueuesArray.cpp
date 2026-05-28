@@ -79,4 +79,17 @@ void tampilkan() {
         return;
     }
     
-   
+    cout << "Data Antrean: " << endl;
+    int i = q.head;
+    
+    // Looping melingkar dari head sampai tail
+    while (true) {
+        cout << i << ". [" << q.data[i] << "]" << endl;
+        if (i == q.tail) {
+            break; // Berhenti jika sudah mencapai tail
+        }
+        i = (i + 1) % MAX; // Geser i secara melingkar
+    }
+    cout << endl;
+}
+
