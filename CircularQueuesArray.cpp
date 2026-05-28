@@ -73,3 +73,10 @@ void clear() {
     cout << "Antrean berhasil dikosongkan." << endl;
 }
 
+void tampilkan() {
+    if (isEmpty()) {
+        cout << "Antrean kosong!" << endl;
+        return;
+    }
+    
+   
