@@ -22,3 +22,10 @@ bool isFull() {
     return false;
 }
 
+bool isEmpty() {
+    if (q.head == -1 && q.tail == -1) {
+        return true;
+    }
+    return false;
+}
+
