@@ -126,4 +126,11 @@ int main() {
             case 5:
                 cout << "Terima kasih!" << endl;
                 return 0;
-            
+            default:
+                cout << "Pilihan tidak valid!" << endl;
+                break;
+        }
+        system("pause"); // Menahan tampilan layar sebelum loop kembali
+    }
+    return 0;
+}
