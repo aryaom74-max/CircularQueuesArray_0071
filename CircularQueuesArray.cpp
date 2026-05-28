@@ -35,4 +35,16 @@ void enqueue(string input) {
         return;
     }
     
-    
+    // Jika antrean benar-benar kosong, inisialisasi head dan tail ke 0
+    if (isEmpty()) {
+        q.head = 0;
+        q.tail = 0;
+        q.data[q.tail] = input;
+    } else {
+        // Geser tail secara melingkar
+        q.tail = (q.tail + 1) % MAX;
+        q.data[q.tail] = input;
+    }
+    cout << "\"" << input << "\" berhasil ditambahkan ke antrean." << endl;
+}
+
