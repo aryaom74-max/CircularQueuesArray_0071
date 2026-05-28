@@ -29,3 +29,10 @@ bool isEmpty() {
     return false;
 }
 
+void enqueue(string input) {
+    if (isFull()) {
+        cout << "Antrean penuh!" << endl;
+        return;
+    }
+    
+    
